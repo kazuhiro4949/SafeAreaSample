@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W6A-dL-tAs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adjusted Content Inset View Controller-->
+        <scene sceneID="RJa-46-xFd">
+            <objects>
+                <viewController id="W6A-dL-tAs" customClass="AdjustedContentInsetViewController" customModule="SafeAreaAPIs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TdQ-pe-Tz5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGU-TX-zle">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEN-WP-07O">
+                                <rect key="frame" x="299" y="591" width="60" height="60"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RQC-uG-AXM">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-ZU-A9N">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HnL-dc-QhJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99e-SF-eBn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="✗"/>
+                                                        <connections>
+                                                            <segue destination="wjt-Rx-BWz" kind="unwind" unwindAction="unwindWithSegue:" id="GwG-zU-YIq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="99e-SF-eBn" secondAttribute="trailing" id="DaN-3f-TPs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="99e-SF-eBn" secondAttribute="bottom" id="YAC-le-W8x"/>
+                                                    <constraint firstItem="99e-SF-eBn" firstAttribute="top" secondItem="HnL-dc-QhJ" secondAttribute="top" id="fcU-4a-5Ip"/>
+                                                    <constraint firstItem="99e-SF-eBn" firstAttribute="leading" secondItem="HnL-dc-QhJ" secondAttribute="leading" id="wLi-fW-peJ"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="extraLight"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ony-ZU-A9N" firstAttribute="leading" secondItem="RQC-uG-AXM" secondAttribute="leading" id="1j7-D0-4gc"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ony-ZU-A9N" secondAttribute="bottom" id="DOk-it-7Dq"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ony-ZU-A9N" secondAttribute="trailing" id="NQZ-h1-yra"/>
+                                        <constraint firstItem="Ony-ZU-A9N" firstAttribute="top" secondItem="RQC-uG-AXM" secondAttribute="top" id="cYt-40-fMC"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="gfe-Lz-w4A"/>
+                                    <constraint firstAttribute="height" constant="60" id="vU2-cr-372"/>
+                                </constraints>
+                                <blurEffect style="extraLight"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xGU-TX-zle" secondAttribute="bottom" id="F4n-as-E7E"/>
+                            <constraint firstItem="xGU-TX-zle" firstAttribute="leading" secondItem="TdQ-pe-Tz5" secondAttribute="leading" id="LA6-5G-OeT"/>
+                            <constraint firstItem="xGU-TX-zle" firstAttribute="top" secondItem="TdQ-pe-Tz5" secondAttribute="top" id="Uaz-Bj-qal"/>
+                            <constraint firstAttribute="trailing" secondItem="xGU-TX-zle" secondAttribute="trailing" id="Wfv-WG-hBZ"/>
+                            <constraint firstItem="Uqm-cS-YSv" firstAttribute="trailing" secondItem="CEN-WP-07O" secondAttribute="trailing" constant="16" id="Y45-cz-GxJ"/>
+                            <constraint firstItem="Uqm-cS-YSv" firstAttribute="bottom" secondItem="CEN-WP-07O" secondAttribute="bottom" constant="16" id="xwY-38-umk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uqm-cS-YSv"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="xGU-TX-zle" id="Nbd-cF-I1k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0e-0O-2r0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wjt-Rx-BWz" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="129"/>
+        </scene>
+    </scenes>
+</document>

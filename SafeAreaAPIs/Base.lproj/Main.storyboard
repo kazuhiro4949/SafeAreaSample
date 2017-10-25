@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,117 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SafeAreaAPIs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gG7-rC-m1j">
+                                <rect key="frame" x="72" y="243.5" width="231" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPd-L4-11Y">
+                                        <rect key="frame" x="64.5" y="0.0" width="102" height="30"/>
+                                        <state key="normal" title="safeAreaInsets"/>
+                                        <connections>
+                                            <segue destination="YNe-9P-BFd" kind="presentation" id="gr7-mo-hMS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2m-d3-Gsx">
+                                        <rect key="frame" x="42" y="30" width="147" height="30"/>
+                                        <state key="normal" title="safeAreaLayoutGuide"/>
+                                        <connections>
+                                            <segue destination="WRA-XZ-LyG" kind="presentation" id="4dM-PD-cwm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ0-iX-PzT">
+                                        <rect key="frame" x="0.0" y="60" width="231" height="30"/>
+                                        <state key="normal" title="insetsLayoutMarginFromSafeArea"/>
+                                        <connections>
+                                            <segue destination="7lM-1g-qNc" kind="presentation" id="a57-VG-yPP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxN-ou-JI4">
+                                        <rect key="frame" x="2" y="90" width="227" height="30"/>
+                                        <state key="normal" title="ContentInsetAdjustmentBehavior"/>
+                                        <connections>
+                                            <segue destination="PGX-2K-AbR" kind="presentation" id="o8t-H1-TXN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ri-vm-E6b">
+                                        <rect key="frame" x="8.5" y="120" width="214" height="30"/>
+                                        <state key="normal" title="InsetsContentViewsToSafeArea"/>
+                                        <connections>
+                                            <segue destination="y2u-yC-Cpv" kind="presentation" id="2DI-Pr-Y2o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gz-n8-dLF">
+                                        <rect key="frame" x="38" y="150" width="155" height="30"/>
+                                        <state key="normal" title="SectionInsetReference"/>
+                                        <connections>
+                                            <segue destination="ojB-ZH-7nl" kind="presentation" id="4Rn-9V-kdM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gG7-rC-m1j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQy-7M-q4k"/>
+                            <constraint firstItem="gG7-rC-m1j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jVo-mb-hGg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--SafeAreaInsetsViewController-->
+        <scene sceneID="imF-lm-9eo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SafeAreaInsetsViewController" id="YNe-9P-BFd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2d-2Z-bAd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-196"/>
+        </scene>
+        <!--SafeAreaLayoutGuideViewController-->
+        <scene sceneID="d9H-oe-qUE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SafeAreaLayoutGuideViewController" id="WRA-XZ-LyG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkh-ww-fjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="125"/>
+        </scene>
+        <!--InsetsLayoutMarginFromSafeAreaViewController-->
+        <scene sceneID="998-wK-2ma">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InsetsLayoutMarginFromSafeAreaViewController" id="7lM-1g-qNc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n8-fv-ivV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="280"/>
+        </scene>
+        <!--ContentInsetAdjustmentBehaviorViewController-->
+        <scene sceneID="Xv6-B2-AAD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContentInsetAdjustmentBehaviorViewController" id="PGX-2K-AbR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlU-vK-XdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="442"/>
+        </scene>
+        <!--InsetsContentViewsToSafeAreaViewController-->
+        <scene sceneID="o76-yI-E0C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InsetsContentViewsToSafeAreaViewController" id="y2u-yC-Cpv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d88-fI-bIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="530"/>
+        </scene>
+        <!--SectionInsetReferenceViewController-->
+        <scene sceneID="gIj-PC-HoP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SectionInsetReferenceViewController" id="ojB-ZH-7nl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CcE-s4-p7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="669"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,21 @@
 		2B7BAAE51FA0DCF1005D3B39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAAE31FA0DCF1005D3B39 /* LaunchScreen.storyboard */; };
 		2B7BAAF01FA0DCF1005D3B39 /* SafeAreaAPIsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAAEF1FA0DCF1005D3B39 /* SafeAreaAPIsTests.swift */; };
 		2B7BAAFB1FA0DCF1005D3B39 /* SafeAreaAPIsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAAFA1FA0DCF1005D3B39 /* SafeAreaAPIsUITests.swift */; };
+		2B7BAB091FA0E2ED005D3B39 /* SafeAreaInsetsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB081FA0E2ED005D3B39 /* SafeAreaInsetsViewController.storyboard */; };
+		2B7BAB0B1FA0E2FB005D3B39 /* SafeAreaInsetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB0A1FA0E2FB005D3B39 /* SafeAreaInsetsViewController.swift */; };
+		2B7BAB0D1FA0E80B005D3B39 /* SafeAreaLayoutGuideViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB0C1FA0E80B005D3B39 /* SafeAreaLayoutGuideViewController.storyboard */; };
+		2B7BAB0F1FA0E814005D3B39 /* SafeAreaLayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB0E1FA0E814005D3B39 /* SafeAreaLayoutGuideViewController.swift */; };
+		2B7BAB111FA0EA23005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB101FA0EA23005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.storyboard */; };
+		2B7BAB131FA0EA2C005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB121FA0EA2C005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.swift */; };
+		2B7BAB151FA1018B005D3B39 /* ContentInsetAdjustmentBehaviorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB141FA1018B005D3B39 /* ContentInsetAdjustmentBehaviorViewController.storyboard */; };
+		2B7BAB171FA10193005D3B39 /* ContentInsetAdjustmentBehaviorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB161FA10193005D3B39 /* ContentInsetAdjustmentBehaviorViewController.swift */; };
+		2B7BAB191FA10BC4005D3B39 /* AdjustedContentInsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB181FA10BC4005D3B39 /* AdjustedContentInsetViewController.swift */; };
+		2B7BAB1B1FA10BCA005D3B39 /* AdjustedContentInsetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB1A1FA10BCA005D3B39 /* AdjustedContentInsetViewController.storyboard */; };
+		2B7BAB1D1FA10E83005D3B39 /* InsetsContentViewsToSafeAreaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB1C1FA10E83005D3B39 /* InsetsContentViewsToSafeAreaViewController.storyboard */; };
+		2B7BAB1F1FA10E8D005D3B39 /* InsetsContentViewsToSafeAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB1E1FA10E8D005D3B39 /* InsetsContentViewsToSafeAreaViewController.swift */; };
+		2B7BAB211FA11117005D3B39 /* InsetsContentViewsToSafeAreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB201FA11117005D3B39 /* InsetsContentViewsToSafeAreaTableViewCell.swift */; };
+		2B7BAB231FA11248005D3B39 /* SectionInsetReferenceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7BAB221FA11248005D3B39 /* SectionInsetReferenceViewController.storyboard */; };
+		2B7BAB251FA1125C005D3B39 /* SectionInsetReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7BAB241FA1125C005D3B39 /* SectionInsetReferenceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +62,21 @@
 		2B7BAAF61FA0DCF1005D3B39 /* SafeAreaAPIsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeAreaAPIsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7BAAFA1FA0DCF1005D3B39 /* SafeAreaAPIsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaAPIsUITests.swift; sourceTree = "<group>"; };
 		2B7BAAFC1FA0DCF1005D3B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B7BAB081FA0E2ED005D3B39 /* SafeAreaInsetsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SafeAreaInsetsViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB0A1FA0E2FB005D3B39 /* SafeAreaInsetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInsetsViewController.swift; sourceTree = "<group>"; };
+		2B7BAB0C1FA0E80B005D3B39 /* SafeAreaLayoutGuideViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SafeAreaLayoutGuideViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB0E1FA0E814005D3B39 /* SafeAreaLayoutGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaLayoutGuideViewController.swift; sourceTree = "<group>"; };
+		2B7BAB101FA0EA23005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsetsLayoutMarginFromSafeAreaViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB121FA0EA2C005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsLayoutMarginFromSafeAreaViewController.swift; sourceTree = "<group>"; };
+		2B7BAB141FA1018B005D3B39 /* ContentInsetAdjustmentBehaviorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContentInsetAdjustmentBehaviorViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB161FA10193005D3B39 /* ContentInsetAdjustmentBehaviorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInsetAdjustmentBehaviorViewController.swift; sourceTree = "<group>"; };
+		2B7BAB181FA10BC4005D3B39 /* AdjustedContentInsetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustedContentInsetViewController.swift; sourceTree = "<group>"; };
+		2B7BAB1A1FA10BCA005D3B39 /* AdjustedContentInsetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdjustedContentInsetViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB1C1FA10E83005D3B39 /* InsetsContentViewsToSafeAreaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsetsContentViewsToSafeAreaViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB1E1FA10E8D005D3B39 /* InsetsContentViewsToSafeAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsContentViewsToSafeAreaViewController.swift; sourceTree = "<group>"; };
+		2B7BAB201FA11117005D3B39 /* InsetsContentViewsToSafeAreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetsContentViewsToSafeAreaTableViewCell.swift; sourceTree = "<group>"; };
+		2B7BAB221FA11248005D3B39 /* SectionInsetReferenceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SectionInsetReferenceViewController.storyboard; sourceTree = "<group>"; };
+		2B7BAB241FA1125C005D3B39 /* SectionInsetReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionInsetReferenceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +130,21 @@
 				2B7BAADA1FA0DCF1005D3B39 /* AppDelegate.swift */,
 				2B7BAADC1FA0DCF1005D3B39 /* ViewController.swift */,
 				2B7BAADE1FA0DCF1005D3B39 /* Main.storyboard */,
+				2B7BAB081FA0E2ED005D3B39 /* SafeAreaInsetsViewController.storyboard */,
+				2B7BAB0A1FA0E2FB005D3B39 /* SafeAreaInsetsViewController.swift */,
+				2B7BAB0C1FA0E80B005D3B39 /* SafeAreaLayoutGuideViewController.storyboard */,
+				2B7BAB0E1FA0E814005D3B39 /* SafeAreaLayoutGuideViewController.swift */,
+				2B7BAB101FA0EA23005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.storyboard */,
+				2B7BAB121FA0EA2C005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.swift */,
+				2B7BAB141FA1018B005D3B39 /* ContentInsetAdjustmentBehaviorViewController.storyboard */,
+				2B7BAB161FA10193005D3B39 /* ContentInsetAdjustmentBehaviorViewController.swift */,
+				2B7BAB181FA10BC4005D3B39 /* AdjustedContentInsetViewController.swift */,
+				2B7BAB1A1FA10BCA005D3B39 /* AdjustedContentInsetViewController.storyboard */,
+				2B7BAB1C1FA10E83005D3B39 /* InsetsContentViewsToSafeAreaViewController.storyboard */,
+				2B7BAB1E1FA10E8D005D3B39 /* InsetsContentViewsToSafeAreaViewController.swift */,
+				2B7BAB201FA11117005D3B39 /* InsetsContentViewsToSafeAreaTableViewCell.swift */,
+				2B7BAB221FA11248005D3B39 /* SectionInsetReferenceViewController.storyboard */,
+				2B7BAB241FA1125C005D3B39 /* SectionInsetReferenceViewController.swift */,
 				2B7BAAE11FA0DCF1005D3B39 /* Assets.xcassets */,
 				2B7BAAE31FA0DCF1005D3B39 /* LaunchScreen.storyboard */,
 				2B7BAAE61FA0DCF1005D3B39 /* Info.plist */,
@@ -193,7 +238,7 @@
 				TargetAttributes = {
 					2B7BAAD61FA0DCF1005D3B39 = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2B7BAAEA1FA0DCF1005D3B39 = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -232,9 +277,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7BAB1D1FA10E83005D3B39 /* InsetsContentViewsToSafeAreaViewController.storyboard in Resources */,
+				2B7BAB0D1FA0E80B005D3B39 /* SafeAreaLayoutGuideViewController.storyboard in Resources */,
+				2B7BAB151FA1018B005D3B39 /* ContentInsetAdjustmentBehaviorViewController.storyboard in Resources */,
+				2B7BAB111FA0EA23005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.storyboard in Resources */,
 				2B7BAAE51FA0DCF1005D3B39 /* LaunchScreen.storyboard in Resources */,
 				2B7BAAE21FA0DCF1005D3B39 /* Assets.xcassets in Resources */,
+				2B7BAB1B1FA10BCA005D3B39 /* AdjustedContentInsetViewController.storyboard in Resources */,
 				2B7BAAE01FA0DCF1005D3B39 /* Main.storyboard in Resources */,
+				2B7BAB091FA0E2ED005D3B39 /* SafeAreaInsetsViewController.storyboard in Resources */,
+				2B7BAB231FA11248005D3B39 /* SectionInsetReferenceViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B7BAB0B1FA0E2FB005D3B39 /* SafeAreaInsetsViewController.swift in Sources */,
+				2B7BAB171FA10193005D3B39 /* ContentInsetAdjustmentBehaviorViewController.swift in Sources */,
+				2B7BAB191FA10BC4005D3B39 /* AdjustedContentInsetViewController.swift in Sources */,
+				2B7BAB211FA11117005D3B39 /* InsetsContentViewsToSafeAreaTableViewCell.swift in Sources */,
+				2B7BAB131FA0EA2C005D3B39 /* InsetsLayoutMarginFromSafeAreaViewController.swift in Sources */,
+				2B7BAB1F1FA10E8D005D3B39 /* InsetsContentViewsToSafeAreaViewController.swift in Sources */,
+				2B7BAB251FA1125C005D3B39 /* SectionInsetReferenceViewController.swift in Sources */,
+				2B7BAB0F1FA0E814005D3B39 /* SafeAreaLayoutGuideViewController.swift in Sources */,
 				2B7BAADD1FA0DCF1005D3B39 /* ViewController.swift in Sources */,
 				2B7BAADB1FA0DCF1005D3B39 /* AppDelegate.swift in Sources */,
 			);
@@ -426,12 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R33Y42SDDR;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SafeAreaAPIs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kazuhiro.hayash.SafeAreaAPIs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +502,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R33Y42SDDR;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SafeAreaAPIs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kazuhiro.hayash.SafeAreaAPIs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

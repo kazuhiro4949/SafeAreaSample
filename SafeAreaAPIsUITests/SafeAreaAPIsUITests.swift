@@ -2,7 +2,6 @@
 //  SafeAreaAPIsUITests.swift
 //  SafeAreaAPIsUITests
 //
-//  Created by kahayash on 2017/10/25.
 //  Copyright © 2017年 Personal. All rights reserved.
 //
 

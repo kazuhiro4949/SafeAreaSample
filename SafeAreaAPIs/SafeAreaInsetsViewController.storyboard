@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PS4-ra-CqD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safe Area Insets View Controller-->
+        <scene sceneID="zgJ-32-kNs">
+            <objects>
+                <viewController id="PS4-ra-CqD" customClass="SafeAreaInsetsViewController" customModule="SafeAreaAPIs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P71-rm-XAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rTg-n0-gW5" customClass="View" customModule="SafeAreaAPIs" customModuleProvider="target">
+                                <rect key="frame" x="25" y="393" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nea-hI-JFT">
+                                <rect key="frame" x="299" y="591" width="60" height="60"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Q5A-iG-RNc">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZl-Im-T3y">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ziB-Zv-8WJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1T-no-jdv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="✗"/>
+                                                        <connections>
+                                                            <segue destination="Pfe-WF-Nzx" kind="unwind" unwindAction="unwindWithSegue:" id="ehx-qv-1YY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="F1T-no-jdv" firstAttribute="top" secondItem="ziB-Zv-8WJ" secondAttribute="top" id="4GG-rH-nJY"/>
+                                                    <constraint firstItem="F1T-no-jdv" firstAttribute="leading" secondItem="ziB-Zv-8WJ" secondAttribute="leading" id="AAN-cf-ezN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="F1T-no-jdv" secondAttribute="bottom" id="DiB-iV-Vxu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="F1T-no-jdv" secondAttribute="trailing" id="vLb-XR-HOx"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="extraLight"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="tZl-Im-T3y" secondAttribute="trailing" id="bSL-Qs-ex5"/>
+                                        <constraint firstItem="tZl-Im-T3y" firstAttribute="top" secondItem="Q5A-iG-RNc" secondAttribute="top" id="kAp-PR-0mO"/>
+                                        <constraint firstAttribute="bottom" secondItem="tZl-Im-T3y" secondAttribute="bottom" id="uh8-Cb-Atq"/>
+                                        <constraint firstItem="tZl-Im-T3y" firstAttribute="leading" secondItem="Q5A-iG-RNc" secondAttribute="leading" id="zUw-qA-xSG"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Pyq-93-7r6"/>
+                                    <constraint firstAttribute="width" constant="60" id="trE-7B-YIP"/>
+                                </constraints>
+                                <blurEffect style="extraLight"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QgK-o9-CfA" firstAttribute="bottom" secondItem="Nea-hI-JFT" secondAttribute="bottom" constant="16" id="DFg-c2-0zO"/>
+                            <constraint firstItem="QgK-o9-CfA" firstAttribute="trailing" secondItem="Nea-hI-JFT" secondAttribute="trailing" constant="16" id="g8o-rd-OPq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QgK-o9-CfA"/>
+                    </view>
+                    <connections>
+                        <outlet property="_view" destination="rTg-n0-gW5" id="4Na-5D-6vK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqe-t6-rgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Pfe-WF-Nzx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="82"/>
+        </scene>
+    </scenes>
+</document>

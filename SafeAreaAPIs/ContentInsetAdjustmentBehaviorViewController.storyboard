@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aRG-ME-YOZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Content Inset Adjustment Behavior View Controller-->
+        <scene sceneID="QcL-hP-Dvz">
+            <objects>
+                <viewController id="aRG-ME-YOZ" customClass="ContentInsetAdjustmentBehaviorViewController" customModule="SafeAreaAPIs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QtV-Tk-F2i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WW-2w-BAW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHC-81-XNc">
+                                <rect key="frame" x="299" y="591" width="60" height="60"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UHV-LT-ANF">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amb-my-FvJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NsH-En-nF4">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQV-SF-ASb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="✗"/>
+                                                        <connections>
+                                                            <segue destination="qfg-oO-nOJ" kind="unwind" unwindAction="unwindWithSegue:" id="Q0e-Hs-y1Z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="yQV-SF-ASb" secondAttribute="bottom" id="3nN-UM-chf"/>
+                                                    <constraint firstItem="yQV-SF-ASb" firstAttribute="leading" secondItem="NsH-En-nF4" secondAttribute="leading" id="GRj-QP-dXj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yQV-SF-ASb" secondAttribute="trailing" id="hn9-81-CBy"/>
+                                                    <constraint firstItem="yQV-SF-ASb" firstAttribute="top" secondItem="NsH-En-nF4" secondAttribute="top" id="reT-C1-4oS"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="extraLight"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="amb-my-FvJ" secondAttribute="trailing" id="Ato-bs-1T6"/>
+                                        <constraint firstAttribute="bottom" secondItem="amb-my-FvJ" secondAttribute="bottom" id="K4R-PA-zOV"/>
+                                        <constraint firstItem="amb-my-FvJ" firstAttribute="leading" secondItem="UHV-LT-ANF" secondAttribute="leading" id="oCC-Sg-UoP"/>
+                                        <constraint firstItem="amb-my-FvJ" firstAttribute="top" secondItem="UHV-LT-ANF" secondAttribute="top" id="zVl-SO-UUx"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9Xj-TL-hmq"/>
+                                    <constraint firstAttribute="height" constant="60" id="eyz-oB-gbg"/>
+                                </constraints>
+                                <blurEffect style="extraLight"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6WW-2w-BAW" secondAttribute="bottom" id="5mX-DK-VrM"/>
+                            <constraint firstItem="6WW-2w-BAW" firstAttribute="top" secondItem="QtV-Tk-F2i" secondAttribute="top" id="8pa-Ln-rYn"/>
+                            <constraint firstItem="BHg-Gr-pO4" firstAttribute="bottom" secondItem="kHC-81-XNc" secondAttribute="bottom" constant="16" id="SqN-3t-bpY"/>
+                            <constraint firstItem="6WW-2w-BAW" firstAttribute="leading" secondItem="QtV-Tk-F2i" secondAttribute="leading" id="aVm-qT-3Yf"/>
+                            <constraint firstItem="BHg-Gr-pO4" firstAttribute="trailing" secondItem="kHC-81-XNc" secondAttribute="trailing" constant="16" id="eyT-J4-UPv"/>
+                            <constraint firstAttribute="trailing" secondItem="6WW-2w-BAW" secondAttribute="trailing" id="y5m-dT-lZL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BHg-Gr-pO4"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="6WW-2w-BAW" id="OSR-C3-6XV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vw7-c5-HTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="qfg-oO-nOJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="251"/>
+        </scene>
+    </scenes>
+</document>
